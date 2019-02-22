@@ -5,7 +5,7 @@ This repo supports 3 tutorials on Hackster.io that extend the AIY Voice Kit by G
 This tutorial is based upon <a href="http://blog.mybigideas.uk/2018/03/adding-vision-to-your-aiy-project-in-4.html">Leo White's ('<i>Adding Vision to the AIY Voice Kit</i>')</a> which required updating in order to work with the latest <a href="https://github.com/google/aiyprojects-raspbian/releases/tag/v20181116">AIY Kits Release (Nov 2018)</a>.
 
 #### 02 <a href="https://www.hackster.io/elizmyers/add-vision-to-the-aiy-voice-kit-e9ff3d">What is That?</a> (Whose logo is that?, What does that say?)
-This tutorial makes further use of the pi camera we added in the previous tutorial. I've also extends the Voice experience. By including things like a personalized greetng, random hello/goodbye messages, and better error messages - the experience becomes more natural.
+This tutorial makes further use of the pi camera we added in the previous tutorial. It describes images it "sees" and demonstrates an enhanced Voice UI in Python. By including things like a personalized greetng, random hello/goodbye messages, and better error handling - the experience sounds more natural.
 
 #### 03 Coming Soon!
 Adding a Neopixel Ring to the AIY Voice Kit - for interaction with feedback and lights - just like a Google Home device. 
