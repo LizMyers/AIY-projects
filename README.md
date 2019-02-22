@@ -1,4 +1,4 @@
-# AIY-projects
+# AIY Projects
 This repo supports 3 tutorials on Hackster.io that extend the AIY Voice Kit by Google. More specifically, these experiments are about adding a camera to the Voice Kit (v1). This allows your Raspberry Pi to describe what it "sees".  It also provides an easy intro to the Vision API on Google Cloud.
 
 #### 01 <a href="https://www.hackster.io/elizmyers/aiy-smart-doorbell-02d8ad"> Smart Doorbell</a>
