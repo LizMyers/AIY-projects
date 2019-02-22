@@ -34,7 +34,7 @@ from aiy.board import Board, Led
 from aiy.cloudspeech import CloudSpeechClient
 
 #subsitute your first name below
-firstName = 'Liz'
+firstName = 'friend'
 
 def get_hints(language_code):
     if language_code.startswith('en_'):
@@ -42,6 +42,7 @@ def get_hints(language_code):
                 'what\'s that',
                 'what is there',
                 'what logo is that',
+                'what logo is there',
                 'whose logo is that',
                 'what does that say',
                 'can you read that',
@@ -142,6 +143,8 @@ def main():
                     output = whatisthat.takeAndProcessImage('label')
                 elif 'what logo is that' in text:
                     output = whatisthat.takeAndProcessImage('logo')
+                elif 'what logo is there' in text:
+                    output = whatisthat.takeAndProcessImage('logo')
                 elif 'whose logo is that' in text:
                     output = whatisthat.takeAndProcessImage('logo')
                 elif 'what does that say' in text:
@@ -173,9 +176,6 @@ def main():
                 elif 'stop' in text:
                     tts.say(random_goodbye())
                     break
-                #else:
-                    #logging.info('Sorry, what was that?')
-                    #tts.say('Sorry, what was that?')
             
                 # If we got a result then both print and speak it. 
                 if output is not None:
@@ -183,21 +183,15 @@ def main():
                         print(output)
                         tts.say(output)
                         tts.say('that\'s a quote by Albert Einstein')
-                    elif 'Canidae' in output:
-                        tts.say('That\'s a Boston Terrier!')
-                        aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/dog_bark_01.wav')
-                    elif 'Boston Terrier' in output:
-                        tts.say('That\'s a Boston Terrier!')
-                        aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/dog_bark_01.wav')
-                    elif 'Bird' in output:
-                        tts.say('That\'s a Mallard Duck!')
-                        aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/mono_mallard.wav')
-                    elif 'Duck' in output:
-                        tts.say('That\'s a Mallard Duck!')
-                        aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/mono_mallard.wav')
-                    elif 'Zebra' in output:
-                        tts.say('That\'s a Zebra!')
-                        aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/mono_zebra.wav')
+                    #elif 'Dog' in output:
+                        #tts.say('That\'s a Boston Terrier!')
+                        #aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/wav/mono_dog.wav')
+                    #elif 'Duck' in output:
+                        #tts.say('That\'s a Mallard Duck!')
+                        #aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/wav/mono_mallard.wav')
+                    #elif 'Zebra' in output:
+                        #tts.say('That\'s a Zebra!')
+                        #aiy.voice.audio.play_wav('/home/pi/AIY-projects-python/src/examples/voice/cloud-vision/wav/mono_zebra.wav')
                     else:
                         print(output)
                         tts.say(output)
