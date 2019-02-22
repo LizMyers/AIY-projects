@@ -1,6 +1,5 @@
 # AIY-projects
-This repo supports my tutorials that extend the AIY Voice Kit by Google. By adding a pi Camera, a neopixel ring, and a few wave files you can build these projects:
-
+This repo supports 3 tutorials on Hackster.io that extend the AIY Voice Kit by Google. By adding a pi Camera, a neopixel ring, and a few wave files you can jazz up the basic example files included with the Voice and Vision kits.
 
 ### 01 <a href="https://www.hackster.io/elizmyers/aiy-smart-doorbell-02d8ad"> Smart Doorbell</a>
 Adding Vision to AIY Voice Kit
